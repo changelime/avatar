@@ -1,0 +1,10 @@
+{
+  "name": "dome",
+  "version": "0.0.1",
+  "description": "a sample node.js app",
+  "main": "app.js",
+  "dependencies": {
+    "connect": "*",
+    "serve-static":"*"
+  }
+}
