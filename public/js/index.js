@@ -34,6 +34,8 @@ var dropFiles = function (event)
 				var value = 1;
 				if(num.value)
 					value = num.value;
+				if(num.value>99)
+					value = "99+";
 				ctx.fillText(value, x, y + y/4);
 			};
 		};
