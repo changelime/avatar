@@ -1,5 +1,6 @@
 var drawing = document.getElementById("drawing");
 var num = document.getElementById("num");
+var pImg = document.getElementById("pImg");
 var ctx = drawing.getContext("2d");
 var dropFiles = function (event)
 {
@@ -32,11 +33,12 @@ var dropFiles = function (event)
 				ctx.font = "bold "+ y +"px Arial";
 				ctx.textAlign = "center";
 				var value = 1;
-				if(num.value)
+				if(num.value && !isNaN(num.value))
 					value = num.value;
 				if(num.value>99)
 					value = "99+";
-				ctx.fillText(value, x, y + y/4);
+				ctx.fillText(value, x, y + y/3);
+				pImg.src = drawing.toDataURL(); 
 			};
 		};
 	}

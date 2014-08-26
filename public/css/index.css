@@ -17,3 +17,7 @@ p
 {
 	margin-top:20px; 
 }
+canvas
+{
+	display: none;
+}
