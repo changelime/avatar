@@ -9,15 +9,20 @@ body
 div
 {
 	width: 70%;
-	height: 100%;
 	margin: 0 auto;
 	text-align: center;
 }
 p
 {
-	margin-top:20px; 
+	margin: 0;
+	padding: 0;
+	padding-top: 20px;
 }
 canvas
 {
 	display: none;
+}
+img
+{
+	padding: 10px 0;
 }
